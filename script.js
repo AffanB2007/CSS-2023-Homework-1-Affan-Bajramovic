@@ -24,6 +24,14 @@ const questions = [
     d: "none of the above",
     correct: "b",
   },
+  {
+    question: "How are you?",
+    a: "Good",
+    b: "Bad",
+    c: "Sad",
+    d: "Tired",
+    correct: "a",
+  },
 ];
 
 //Fetching the HTML elements
