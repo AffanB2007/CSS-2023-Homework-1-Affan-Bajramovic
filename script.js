@@ -6,6 +6,7 @@ const questions = [
     b: "Coding Style Sheets",
     c: "Cascading Simple Sheets",
     d: "Cars SUVs & Sailboats",
+    e: "Continets Safe & Sound",
     correct: "a",
   },
   {
@@ -14,6 +15,7 @@ const questions = [
     b: "2021",
     c: "2022",
     d: "2023",
+    e: "none of the above",
     correct: "b",
   },
   {
@@ -22,6 +24,7 @@ const questions = [
     b: "Bosnia and Herzegovina Futures Foundation",
     c: "Bosnia and Herzegovina Factory Foundation",
     d: "none of the above",
+    e: "all of the above",
     correct: "b",
   },
   {
@@ -30,6 +33,25 @@ const questions = [
     b: "Bad",
     c: "Sad",
     d: "Tired",
+    e: "I don't know",
+    correct: "a",
+  },
+  {
+    question: "What is the best snooker player of all time?",
+    a: "Mark Selby",
+    b: "John Higgins",
+    c: "Ronnie O`Sullivan",
+    d: "Mark Williams",
+    e: "Stephen Hendry",
+    correct: "c",
+  },
+  {
+    question: "What is the best football club of all time?",
+    a: "Real Madrid",
+    b: "Barcelona",
+    c: "Bayern Munich",
+    d: "Liverpool",
+    e: "AC Milan",
     correct: "a",
   },
 ];
@@ -42,6 +64,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -71,6 +94,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
